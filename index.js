@@ -9,9 +9,33 @@ function destructivelyPrependKitten(name) {
 }
 
 function destructivelyRemoveLastKitten() {
-  kitten.pop();
+  kittens.pop();
 }
 
 function destructivelyRemoveFirstKitten() {
-  kittn.shift();
+  kittens.shift();
+}
+
+function appenKitten(name) {
+  arr = [...kittens];
+  arr.push(name);
+  return arr;
+}
+
+function prependKitten(name) {
+  arr = [...kittens];
+  arr.unshift(kittens);
+  return arr;
+}
+
+function removeLastKitten() {
+  arr = [...kittens];
+  arr.pop();
+  return arr;
+}
+
+function removeFirstKitten() {
+  arr = [...kittens];
+  arr.shift();
+  return arr;
 }
